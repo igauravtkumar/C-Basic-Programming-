@@ -1,0 +1,30 @@
+user input number :
+	number greater than 10 
+		
+		input number :
+			number check divisible 6 
+			yes this number is divisible by 6 
+
+			otherwise :this number is not divisible by 6 
+		
+		number is not greater than 10 
+-----------------------------------------------------------------------------------------
+user input character :
+e :
+	check number is even or odd 
+
+m :
+	make calendar 
+
+c :
+	calculator 
+
+w :
+	week days 
+
+g :
+	marksheet 
+			
+v :
+	voter id (input age :greater than 18 valid otherwise not valid for vote ) 
+---------------------------------------------------------------------
