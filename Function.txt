@@ -1,0 +1,388 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+void sum();
+void even();
+void marksheet();
+void month();
+void week();
+void vovel();
+void voterId();
+
+
+void voterid();
+void armstrong();
+void factorial();
+void palindrome();
+void neon();
+void reverse();
+void count();
+void sumofdigits();
+void fibonacci();
+int main()
+{
+
+
+	even();
+	marksheet();
+	month();
+	week();
+	vovel();
+	voterid();
+
+	char ch;
+	printf("Enter a character(a, f, b, p, n, r, c, s): ");
+	scanf("%s", &ch);
+	if(ch == 'a') {
+		armstrong();
+	}
+	else if(ch == 'f') {
+		factorial();
+	}
+	else if(ch == 'b') {
+		fibonacci();
+	}
+	else if(ch == 'p') {
+		palindrome();
+	}
+	else if(ch == 'n') {
+		neon();
+	}
+	else if(ch == 'r') {
+		reverse();
+	}
+	else if(ch == 'c') {
+		count();
+	}
+	else if(ch == 's') {
+		sumofdigits();
+	}
+
+
+	return 0;
+}
+
+void sum () {
+
+
+	int d;
+	int d1;
+
+
+
+	printf("Enter the value of d ");
+	scanf(" %d", &d);
+	printf("Enter the value of d1 ");
+	scanf(" %d", &d1);
+	int resultAdd = d + d1;
+	int resultSub = d - d1;
+	int resultMultiply = d * d1;
+	int divide = d / d1;
+	int modular = d % d1;
+
+	printf("Add %d\n",resultAdd);
+	printf("Sub %d\n", resultSub);
+	printf("Multiply %d\n", resultMultiply);
+	printf("Divide %d\n", divide);
+	printf("Modular %d\n", modular);
+
+
+
+}
+// Even odd number
+void even() {
+
+	int d;
+
+
+
+
+	printf("Enter the value of d ");
+	scanf(" %d", &d);
+	printf("Enter the value of d1 ");
+
+
+	if(d % 2 == 0) {
+		printf("d variable is a even value");
+	}
+	else {
+		printf("d var is in odd value");
+	}
+}
+
+// marksheet
+
+void marksheet() {
+
+	int m1, m2, m3, m4, m5;
+	float total, percentage;
+	char grade;
+
+	printf("Enter mark 1: ");
+	scanf("%d", &m1);
+	printf("Enter mark 2: ");
+	scanf("%d", &m2);
+	printf("Enter mark 3: ");
+	scanf("%d", &m3);
+	printf("Enter mark 4: ");
+	scanf("%d", &m4);
+	printf("Enter mark 5: ");
+	scanf("%d", &m5);
+
+	total = m1 + m2 + m3 + m4 + m5;
+	percentage = (total / 500.0) * 100;
+
+	if (percentage < 25) {
+		grade = 'F';
+	} else if (percentage < 45) {
+		grade = 'E';
+	} else if (percentage < 50) {
+		grade = 'D';
+	} else if (percentage < 60) {
+		grade = 'C';
+	} else if (percentage < 80) {
+		grade = 'B';
+	} else {
+		grade = 'A';
+	}
+
+	printf("\nTotal Marks: \n", total);
+	printf("Percentage: \n", percentage);
+	printf("Grade: %c\n", grade);
+
+}
+
+// Month
+
+void month() {
+	char a;
+	// printf("Enter any word ");
+	// scanf("%c", &a);
+	// if(a =='a'){
+	//     printf("Jan");
+	// }
+	// else if(a == 'b'){
+	//     printf("Feb");
+	// }
+	// else if(a == 'c'){
+	//     printf("Mar");
+	// }
+	// else if(a == 'd'){
+	//     printf("April");
+	// }
+	// else if(a == 'e'){
+	//     printf("May");
+	// }
+	// else if(a == 'f'){
+	//     printf("June");
+	// }
+	// else if(a == 'g'){
+	//     printf("July");
+	// }
+	// else if(a == 'g'){
+	//     printf("Aug");
+	// }
+	// else if(a == 'g'){
+	//     printf("Sept");
+	// }
+	// else if(a == 'g'){
+	//     printf("Oct");
+	// }
+	// else if(a == 'g'){
+	//     printf("Nov");
+	// }
+	// else if(a == 'g'){
+	//     printf("December");
+	// }
+	// else{
+	//     printf("Invalid input");
+	// }
+
+
+};
+
+// Week
+void week() {
+	char a;
+	printf("Enter any word ");
+	scanf("%c", &a);
+	if(a =='a') {
+		printf("Monday");
+	}
+	else if(a == 'b') {
+		printf("Tuesday");
+	}
+	else if(a == 'c') {
+		printf("Wednesday");
+	}
+	else if(a == 'd') {
+		printf("Thrusday");
+	}
+	else if(a == 'e') {
+		printf("Friday");
+	}
+	else if(a == 'f') {
+		printf("Saturday");
+	}
+	else if(a == 'g') {
+		printf("Sunday");
+	}
+	else {
+		printf("Invalid input");
+	}
+
+};
+
+// vovel
+void vovel() {
+	char a;
+	printf("Enter any word ");
+	scanf("%c", &a);
+	if(a =='a') {
+		printf("Vovel");
+	}
+	else if(a == 'e') {
+		printf("Vovel");
+	}
+	else if(a == 'i') {
+		printf("Vovel");
+
+	} else if(a == 'o') {
+		printf("Vovel");
+	}
+	else if(a == 'u') {
+		printf("Vovel");
+	}
+	else {
+		printf("Invalid input");
+	}
+
+};
+
+
+
+
+void voterid() {
+	int age;
+	printf("Enter your age: ");
+	scanf("%d", &age);
+	if(age >= 18) {
+		printf("Eligible to vote");
+	}
+	else {
+		printf("Not eligible to vote");
+	}
+}
+
+void armstrong() {
+	int n, rem = 0, sum = 0;
+	printf("Enter number: ");
+	scanf("%d", &n);
+	int temp = n;
+	while(n>0) {
+		rem = n % 10;
+		sum = sum + (rem * rem * rem);
+		n /= 10;
+	}
+	if(sum == temp) {
+		printf("Number entered is armstrong");
+	}
+	else {
+		printf("Number entered is not armstrong");
+	}
+}
+
+void factorial() {
+	int n, rem = 0, fact = 1;
+	printf("Enter a number: ");
+	scanf("%d", &n);
+	while(n > 0) {
+		rem = n % 10;
+		fact *= rem;
+		n /= 10;
+	}
+	printf("%d", fact);
+}
+
+void fibonacci() {
+	int n = 5;
+	int n1 = 0, n2 = 1, n3;
+	printf("%d %d ", n1, n2);
+	for(int i=1; i<=n; i++) {
+		n3 = n1 + n2;
+		printf("%d ", n3);
+		n1 = n2;
+		n2 = n3;
+	}
+}
+
+void palindrome() {
+	int n1 = 1221, rem = 0, sum = 0;
+	int temp = n1;
+	while(n1 > 0) {
+		rem = n1 % 10;
+		sum = sum * 10 + rem;
+		n1 /= 10;
+	}
+	if(temp == sum) {
+		printf("Number is palindrome");
+	}
+	else {
+		printf("Number is not palindrome");
+	}
+}
+
+void neon() {
+	int n = 9, rem = 0, sum = 0;
+	int temp = n * n;
+	while(temp > 0) {
+		rem = temp % 10;
+		sum += rem;
+		temp /= 10;
+	}
+	if(n == sum) {
+		printf("Neon");
+	}
+	else {
+		printf("Not neon");
+	}
+}
+
+void reversenumber() {
+	int r, rem = 0, sum = 0;
+	while(r > 0) {
+		rem = r % 10;
+		sum = r * 10 + rem;
+		r /= 10;
+	}
+	printf("%d", sum);
+}
+
+void count() {
+	int c, count = 0;
+	printf("Enter number: ");
+	scanf("%d", &c);
+	while(c > 0) {
+		c /= 10;
+		count++;
+	}
+	printf("%d", count);
+}
+
+void sumofdigit() {
+	int s, rem = 0, sum = 0;
+	printf("Enter number: ");
+	scanf("%d", &s);
+	while(s > 0) {
+		rem = s % 10;
+		sum += rem;
+		s /= 10;
+	}
+	printf("%d", sum);
+}
