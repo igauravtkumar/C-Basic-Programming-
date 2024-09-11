@@ -45,7 +45,7 @@ Answer :-
 
 int main() {
     for (int i=1;i<=10;i++){
-        if(i%2!=0){
+        if(i%2){
         printf("%d ",i);
         }
     }
@@ -77,7 +77,7 @@ Answer :-
 
 int main() {
     for (int i=67;i>=23;i--){
-        if(i%2!=0){
+        if(i%2){
         printf("%d ",i);
         }
     }
@@ -109,7 +109,7 @@ Answer :-
 
 int main() {
     for (int i=670;i>=23;i--){
-        if(i%2!=0){
+        if(i%2){
         printf("%d ",i);
         }
     }
